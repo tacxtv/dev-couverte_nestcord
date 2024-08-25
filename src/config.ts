@@ -10,7 +10,7 @@ export interface ConfigInstance {
 export default async (): Promise<ConfigInstance> => ({
   necord: {
     options: {
-      token: 'DISCORD_BOT_TOKEN',
+      token: process.env.NECORD_TOKEN,
       intents: [IntentsBitField.Flags.Guilds],
     },
   },
