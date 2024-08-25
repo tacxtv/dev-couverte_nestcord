@@ -12,6 +12,7 @@ export default async (): Promise<ConfigInstance> => ({
     options: {
       token: process.env.NECORD_TOKEN,
       intents: [IntentsBitField.Flags.Guilds],
+      development: [process.env.NECORD_DEVELOPMENT_GUILD_ID],
     },
   },
 })
