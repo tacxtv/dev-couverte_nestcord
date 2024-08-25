@@ -1,12 +1,14 @@
 import { Injectable, Logger } from "@nestjs/common"
-import { Client } from "discord.js";
-import { Context, ContextOf, On, Once } from "necord";
+import { Client } from "discord.js"
+import { Context, ContextOf, On, Once } from "necord"
 
 @Injectable()
 export class AppUpdate {
-  private readonly logger = new Logger(AppUpdate.name);
+  private readonly logger = new Logger(AppUpdate.name)
 
-  public constructor(private readonly client: Client) {
+  public constructor(
+    private readonly client: Client,
+  ) {
     this.logger.log("AppUpdate has been initialized 🔴")
   }
 

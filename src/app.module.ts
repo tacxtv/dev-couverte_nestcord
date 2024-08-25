@@ -4,6 +4,8 @@ import { NecordModule } from "necord"
 import { ConfigModule, ConfigService } from "@nestjs/config"
 import config from "./config"
 import { AppUpdate } from "./app.update"
+import { AppComponents } from "./app.components"
+import { AppModals } from "./app.modals"
 
 @Module({
   imports: [
@@ -22,6 +24,8 @@ import { AppUpdate } from "./app.update"
   providers: [
     AppService,
     AppUpdate,
+    AppComponents,
+    AppModals,
   ],
 })
 export class AppModule {
