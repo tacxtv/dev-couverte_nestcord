@@ -5,6 +5,14 @@
   "repository": "https://github.com/tacxtv/dev-couverte_nestcord.git",
   "author": "Tacx <12997062+tacxou@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main"
+  },
   "dependencies": {
     "@nestjs/common": "^10.4.1",
     "@nestjs/config": "^3.2.3",
