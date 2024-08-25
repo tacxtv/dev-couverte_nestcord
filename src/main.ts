@@ -8,6 +8,6 @@ declare const module: any;
 
   if (module.hot) {
     module.hot.accept()
-    module.hot.dispose(() => app.close())
+    module.hot.dispose((): Promise<void> => app.close())
   }
 })()
